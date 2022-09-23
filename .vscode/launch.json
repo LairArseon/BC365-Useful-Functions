@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Contenedor Cloud",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "server": "http://BCTC",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
+            "startupObjectId": 60340,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "schemaUpdateMode": "ForceSync"
+        }
+    ]
+}
