@@ -108,6 +108,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ImageFact - NamedType lbl_next</note>
         </trans-unit>
+        <trans-unit id="Page 2495308647 - Action 419926339 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Displays the Table information pertaining the current company.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Muestra la información de la tabla perteneciente a la compañía actual."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PaginaBase - Action TableInfo_BI_LDR - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2495308647 - Action 419926339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inspect Table</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Inspeccionar Tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PaginaBase - Action TableInfo_BI_LDR - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2267014383 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Lines</source>
           <note from="Developer" annotates="general" priority="2">Lineas de compra</note>
