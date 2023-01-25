@@ -28,6 +28,26 @@ pageextension 50200 CosmosMethods extends "Company Information"
                     Funciones.PeticionCosmos(TipoCosmos);
                 end;
             }
+            action(CheckSystemRow)
+            {
+                ApplicationArea = All;
+                Caption = 'Check SystemRow', Comment = 'ESP="Comprueba fila SQL"';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedOnly = True;
+                Image = ReviewWorksheet;
+
+                trigger OnAction()
+                var
+                    RecRef: RecordRef;
+                    FRef: FieldRef;
+                begin
+                    RecRef.Open(DATABASE::Customer);
+                    RecRef.FindFirst();
+                    FRef := RecRef.Field(0);
+                    Message(Format(FRef.Value()));
+                end;
+            }
         }
 
     }
