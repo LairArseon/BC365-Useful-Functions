@@ -8,6 +8,7 @@
 		"cSpell.words": [
 			"Funciones",
 			"Utiles"
-		]
+		],
+		"al-test-runner.sendDebugTelemetry": false
 	}
 }
