@@ -4,6 +4,7 @@
 codeunit 50204 ChecklistSubs
 {
 
+    // Método para quitar la visibilidad de la lista de tareas en el arranque
     [EventSubscriber(ObjectType::Codeunit, Codeunit::Checklist, 'OnChecklistLoading', '', true, true)]
     local procedure TurnOffChecklist()
     var

@@ -1,6 +1,8 @@
 codeunit 50202 LogIntegracion
 {
 
+    // Funcion de procesado de un log de integración segun la estructura estándar de Jandro
+
     // local procedure ProcesarLogIntegracionNoAux()
     // var
     //     logSincro: Record "Log Sincro BI_LDR";

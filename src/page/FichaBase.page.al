@@ -1,5 +1,5 @@
 /// <summary>
-/// Page FichaBase (ID 50202).
+/// Página de Ficha con campos que se colorean y una factbox
 /// </summary>
 page 50207 FichaBase
 {

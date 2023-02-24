@@ -1,3 +1,6 @@
+/// <summary>
+/// Información de las sesiones activas en el entorno
+/// </summary>
 page 50212 ConcSesions
 {
     PageType = List;

@@ -1,3 +1,6 @@
+/// <summary>
+/// Lista de sesiones activas no concurrentes
+/// </summary>
 page 50213 Sesions
 {
     PageType = List;

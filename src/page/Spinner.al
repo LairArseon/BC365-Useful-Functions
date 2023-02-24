@@ -1,3 +1,6 @@
+/// <summary>
+/// ControlAddIn de Spinner con el truco de las visibilidades para quitarlo
+/// </summary>
 page 50217 Spinner
 {
     Caption = 'Spinner', comment = 'ESP="Spinner"';

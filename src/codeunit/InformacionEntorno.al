@@ -1,6 +1,8 @@
 codeunit 50206 InformacionEntorno
 {
 
+    // Obtener información del entorno de ejecucion
+
     procedure EvaluaEntorno()
     var
         InfoEntorno: Codeunit "Environment Information";

@@ -3,6 +3,7 @@
 /// </summary>
 codeunit 50200 "Funciones Web"
 {
+    // Estructura de una peticion web, uso las peticiones que tenemos al servicio de licencia de COSMOS DB
 
     ///////////////////////////////// COSMOS ////////////////////////////////////////
     /// <summary>

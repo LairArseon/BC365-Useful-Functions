@@ -1,3 +1,6 @@
+/// <summary>
+/// Página usada para probar el metodo Find('=') para buscar registros específicos en una tabla con una PK de dos campos
+/// </summary>
 page 50211 ListaDoblePK
 {
     PageType = List;

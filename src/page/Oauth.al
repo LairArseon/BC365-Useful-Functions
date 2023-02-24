@@ -1,3 +1,6 @@
+/// <summary>
+/// ControlAddIn de autorización Oauth
+/// </summary>
 page 50218 Oauth
 {
     Caption = 'Oauth', comment = 'ESP="Oauth"';

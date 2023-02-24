@@ -1,5 +1,5 @@
 /// <summary>
-/// Page ConfPage (ID 50209).
+/// Inicializar tabla de configuración al abrir la página si no hay registro para no tener que crearlo a mano
 /// </summary>
 page 50209 ConfPage
 {
@@ -19,22 +19,6 @@ page 50209 ConfPage
                     ApplicationArea = All;
 
                 }
-            }
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction();
-                begin
-
-                end;
             }
         }
     }

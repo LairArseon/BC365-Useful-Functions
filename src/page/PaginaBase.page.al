@@ -1,5 +1,5 @@
 /// <summary>
-/// Page PaginaBase (ID 50200).
+/// Página lista ejemplo con varias funciones
 /// </summary>
 page 50206 PaginaBase
 {

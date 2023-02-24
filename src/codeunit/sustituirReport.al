@@ -1,5 +1,7 @@
 codeunit 50207 SustituirReport
 {
+
+    // Evento que se usa para sustituir el uso de un report, revisar Report Selection, parece mejor sistema
     trigger OnRun()
     begin
 

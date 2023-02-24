@@ -4,6 +4,9 @@
 codeunit 50201 "Manejo Paginas"
 {
 
+    // Funcion para lanzar páginas desde un recordref (es decir, sin saber ni numero de tabla o de página)
+    // Utilizando un variant podemos tratar el recordref como un record para que se lanze la página por defecto que tienen
+
     /// <summary>
     /// LanzarPaginaDesdeRecordRef.
     /// </summary>

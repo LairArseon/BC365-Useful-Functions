@@ -1,5 +1,5 @@
 /// <summary>
-/// Page DialogBase (ID 50210).
+/// Ejemplo de página de tipo StandardDialog
 /// </summary>
 page 50210 DialogBase
 {

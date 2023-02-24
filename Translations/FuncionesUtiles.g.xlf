@@ -108,6 +108,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ImageFact - NamedType lbl_next</note>
         </trans-unit>
+        <trans-unit id="Page 1711612873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Oauth</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Oauth"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Oauth - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2495308647 - Action 419926339 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Displays the Table information pertaining the current company.</source>
           <note from="Developer" annotates="general" priority="2">ESP="Muestra la información de la tabla perteneciente a la compañía actual."</note>
@@ -242,6 +247,11 @@
           <source>Specifies the variant of the item on the line.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page SLines - Control Variant Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1272686287 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Spinner</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Spinner"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Spinner - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3005478914 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Product variant worksheet</source>

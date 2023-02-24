@@ -1,3 +1,6 @@
+/// <summary>
+/// Lista de eventos de sesion
+/// </summary>
 page 50214 SessionEvent
 {
     Caption = 'Session Events';

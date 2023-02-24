@@ -4,6 +4,9 @@
 codeunit 50205 Notification
 {
 
+    // Lanzar una notificacion LOCAL al abrir el rolecenter
+    // GLOBALES aun no implementadas
+
     SingleInstance = true;
 
     // Añadir notificacion al Rolecenter que dependa de la existencia de la configuracion y el estado de un booleano

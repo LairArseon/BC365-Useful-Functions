@@ -1,3 +1,6 @@
+/// <summary>
+/// Factbox de imagenes para insertar en páginas y con funcion de subir imagen y campo solo label
+/// </summary>
 page 50208 ImageFact
 {
     PageType = CardPart;
@@ -64,7 +67,7 @@ page 50208 ImageFact
         if not Client.Get(Rec.URL, Response) then
             Error(GetLastErrorText());
         Response.Content.ReadAs(InStr);
-        if Rec.FindFirst() then begin 
+        if Rec.FindFirst() then begin
             Clear(Rec.Image);
             Rec.Image.ImportStream(InStr, 'Demo picture for item', 'image/png');
         end;
