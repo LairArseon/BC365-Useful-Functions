@@ -208,6 +208,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ProdOrderComp - Control Variant Code - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 3980563049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>B64 de Imagen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SacarB64Item - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 533789282 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Session List</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -247,6 +252,21 @@
           <source>Specifies the variant of the item on the line.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page SLines - Control Variant Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 701945551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get Value</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Obtener Valor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Solicitar Valor_SGA_LDR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 701945551 - NamedType 2258097281" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Input Value must be of type %1</source>
+          <note from="Developer" annotates="general" priority="2">ESP="El valor introducido debe ser de tipo %1"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Solicitar Valor_SGA_LDR - NamedType lbl_fieldType</note>
+        </trans-unit>
+        <trans-unit id="Page 701945551 - Method 3556373624 - NamedType 2369170752" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Please provide a correct Field Type</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Por favor introduzca un Tipo de Campo correcto"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Solicitar Valor_SGA_LDR - Method EvalField - NamedType lbl_WrongFieldType</note>
         </trans-unit>
         <trans-unit id="Page 1272686287 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Spinner</source>
