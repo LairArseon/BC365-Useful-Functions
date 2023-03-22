@@ -43,6 +43,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TablaBase2 - Field Number - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1192163031 - Field 3751398229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QR</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaBase2 - Field QR - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1192163031 - Field 3003898253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>URL</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -63,6 +68,86 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TablaDoblePK - Field Maincode - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 2544883167 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apellidos</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Apellidos - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 4102913500 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AutoKey</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field AutoKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 2391326462 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Direccion</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Direccion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 2359161876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Direccion2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Direccion2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 1285973296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Email - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 4220512000 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FechaNaci</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field FechaNaci - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 814966011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nombre</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Nombre - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 260259430 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Org</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Org - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 1594621544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Picture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 1234395359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Profesion</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Profesion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 2031163520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QRContacto</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field QRContacto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 768446269 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QRWeb</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field QRWeb - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 110193313 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Titulo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Titulo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 1039092324 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tlfn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Tlfn - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 1138049617 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TlfnTra</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field TlfnTra - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 776500228 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Web</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Web - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Codeunit 2138146580 - Method 4200215159 - NamedType 4121023488" size-unit="char" translate="yes" xml:space="preserve">
           <source>Call Failed</source>
           <note from="Developer" annotates="general" priority="2">ESP="Error en la llamada"</note>
@@ -79,8 +164,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit InformacionEntorno - Method EvaluaEntorno - NamedType textoEntorno</note>
         </trans-unit>
         <trans-unit id="Codeunit 342756159 - Method 2108553266 - NamedType 957698323" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Configure</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Configurar"</note>
+          <source>Open</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Abrir"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Notification - Method Conf./Personalization Mgt._OnRoleCenterOpen - NamedType lbl_NotifAction</note>
         </trans-unit>
         <trans-unit id="Codeunit 342756159 - Method 2108553266 - NamedType 2089531584" size-unit="char" translate="yes" xml:space="preserve">
@@ -89,8 +174,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Notification - Method Conf./Personalization Mgt._OnRoleCenterOpen - NamedType lbl_NeverShow</note>
         </trans-unit>
         <trans-unit id="Codeunit 342756159 - Method 2108553266 - NamedType 1202257342" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Would you like to setup the BI Syncronization Extension Now?</source>
-          <note from="Developer" annotates="general" priority="2">ESP="¿Desea configurar la extensión de Sincronización BI ahora?"</note>
+          <source>Open the Default Page?</source>
+          <note from="Developer" annotates="general" priority="2">ESP="¿Abrir la página por defecto?"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Notification - Method Conf./Personalization Mgt._OnRoleCenterOpen - NamedType lbl_NotifText</note>
         </trans-unit>
         <trans-unit id="Page 3020330729 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -103,10 +188,15 @@
           <note from="Developer" annotates="general" priority="2">ESP="Entradas - Salidas Producto"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page EntradasSalidas - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3556501129 - NamedType 3336444238" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Siguiente</source>
+        <trans-unit id="Page 1201264121 - Action 1378669319 - Method 1377591017 - NamedType 1968152428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Importar imagen</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page ImageFact - NamedType lbl_next</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FactContacto - Action UploadPFP - Method OnAction - NamedType DialogTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 3556501129 - NamedType 2967282045" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cargar</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ImageFact - NamedType lbl_Load</note>
         </trans-unit>
         <trans-unit id="Page 1711612873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Oauth</source>

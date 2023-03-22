@@ -27,11 +27,17 @@ page 50206 PaginaBase
                 field(Inventory; Rec.Inventory)
                 {
                     ApplicationArea = All;
-                    Style = Attention;
+                    StyleExpr = GBL_FieldStyle;
+
+                    trigger OnValidate()
+                    begin
+                        GBL_FieldStyle := EvaluateInventoryStyle(Rec.Inventory);
+                    end;
                 }
                 field(DescriptionLong; Rec.DescriptionLong)
                 {
                     ApplicationArea = All;
+                    MultiLine = true;
                 }
                 field(URL; Rec.URL)
                 {
@@ -140,6 +146,14 @@ page 50206 PaginaBase
 
     }
 
+    var
+        GBL_FieldStyle: Text;
+
+    trigger OnOpenPage()
+    begin
+        GBL_FieldStyle := EvaluateInventoryStyle(Rec.Inventory);
+    end;
+
 
     /// <summary>
     /// ImportItemPictureFromURL.
@@ -172,8 +186,13 @@ page 50206 PaginaBase
         confDialog: Dialog;
         fichaB: Page FichaBase;
         dialogBase: Page DialogBase;
+        IsHandled: Boolean;
         actionvar: Action;
     begin
+        OnBeforeProcRunModalBucle(IsHandled);
+        if IsHandled then
+            exit;
+
         if recTabBase.FindSet() then
             repeat
                 // confDialog.Open('Documento Propuesto', Rec.Description);
@@ -197,6 +216,32 @@ page 50206 PaginaBase
             // fichaB.RunModal();
 
             until recTabBase.Next() = 0;
+
+        OnAfterProcRunModalBucle();
     end;
+
+    local procedure EvaluateInventoryStyle(Inventory: Integer): Text
+    var
+        lbl_favorable: Label 'Favorable', Locked = true;
+        lbl_attention: Label 'Attention', Locked = true;
+    begin
+        if Inventory > 0 then
+            exit(lbl_favorable)
+        else
+            exit(lbl_attention);
+    end;
+
+
+    #region Integration Events
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeProcRunModalBucle(var IsHandled: Boolean)
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnAfterProcRunModalBucle()
+    begin
+    end;
+    #endregion
 
 }

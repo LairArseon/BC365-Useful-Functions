@@ -14,7 +14,7 @@ page 50208 ImageFact
         {
             group(Foto)
             {
-                field(Imagenes; Rec.Imagenes)
+                field(QR; Rec.QR)
                 {
                     ApplicationArea = All;
 
@@ -34,7 +34,7 @@ page 50208 ImageFact
             }
             group(Menu)
             {
-                field(Next; lbl_next)
+                field(Load; lbl_Load)
                 {
                     ApplicationArea = all;
                     DrillDown = true;
@@ -42,8 +42,8 @@ page 50208 ImageFact
 
                     trigger OnDrillDown()
                     begin
-                        // Message(Format(Rec.Imagenes.Count()));
                         ImportItemPictureFromURL();
+                        CreateQRFromContent();
                     end;
                 }
             }
@@ -51,7 +51,7 @@ page 50208 ImageFact
     }
 
     var
-        lbl_next: Label 'Siguiente';
+        lbl_Load: Label 'Cargar';
 
     /// <summary>
     /// ImportItemPictureFromURL.
@@ -72,6 +72,18 @@ page 50208 ImageFact
             Rec.Image.ImportStream(InStr, 'Demo picture for item', 'image/png');
         end;
 
+    end;
+
+    procedure CreateQRFromContent()
+    var
+        tbloblBar: Codeunit "Temp Blob";
+        iBarcode: Interface "Barcode Image Provider 2D";
+        instrBar: InStream;
+    begin
+        iBarcode := Enum::"Barcode Image Provider 2D"::Dynamics2D;
+        tbloblBar := iBarcode.EncodeImage(Rec.DescriptionLong, Enum::"Barcode Symbology 2D"::"QR-Code");
+        instrBar := tbloblBar.CreateInStream();
+        Rec.QR.ImportStream(instrBar, 'QR Estandar');
     end;
 
 

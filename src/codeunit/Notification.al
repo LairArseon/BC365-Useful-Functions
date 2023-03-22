@@ -13,14 +13,14 @@ codeunit 50205 Notification
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Conf./Personalization Mgt.", 'OnRoleCenterOpen', '', true, true)]
     local procedure "Conf./Personalization Mgt._OnRoleCenterOpen"()
     var
-        confBI: Record ConfTable;
+        conf: Record ConfTable;
         Notifup: Boolean;
-        lbl_NotifAction: Label 'Configure', comment = 'ESP="Configurar"';
+        lbl_NotifAction: Label 'Open', comment = 'ESP="Abrir"';
         lbl_NeverShow: Label 'Never Show Again', comment = 'ESP="No volver a mostrar"';
-        lbl_NotifText: Label 'Would you like to setup the BI Syncronization Extension Now?', Comment = 'ESP="¿Desea configurar la extensión de Sincronización BI ahora?"';
+        lbl_NotifText: Label 'Open the Default Page?', Comment = 'ESP="¿Abrir la página por defecto?"';
     begin
-        if confBI.Get() then
-            Notifup := not confBI.Up;
+        if conf.Get() then
+            Notifup := not conf.Up;
 
         if (Notifup) and (not NotificacionEjecutada) then begin
 
@@ -32,6 +32,24 @@ codeunit 50205 Notification
             NotificacionEjecutada := true;
         end;
 
+    end;
+
+    procedure RunConfTable(ConfNotif: Notification)
+    var
+        ConfPage: Page ConfPage;
+    begin
+        ConfPage.Run();
+    end;
+
+    procedure TurnOffNotif(ConfNotif: Notification)
+    var
+        Conf: Record ConfTable;
+    begin
+        if Conf.Get() then
+            if not Conf.Up then begin
+                Conf.Up := true;
+                Conf.Modify();
+            end;
     end;
 
     var
