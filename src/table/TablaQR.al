@@ -103,7 +103,7 @@ table 50203 TablaQR
         Contenido += tHelper.CRLFSeparator();
         Contenido += 'FN;CHARSET=UTF-8:' + Rec.Nombre + ' ' + Rec.Apellidos;
         Contenido += tHelper.CRLFSeparator();
-        Contenido += 'N;CHARSET=UTF-8:' + Rec.Apellidos + ';' + Rec.Nombre + ';;;';
+        Contenido += 'N;CHARSET=UTF-8:' + Rec.Apellidos + ';' + Rec.Nombre + ';;' + Rec.Titulo + ';';
         Contenido += tHelper.CRLFSeparator();
         Contenido += 'TEL;TYPE=HOME,VOICE:' + Rec.Tlfn;
         Contenido += tHelper.CRLFSeparator();

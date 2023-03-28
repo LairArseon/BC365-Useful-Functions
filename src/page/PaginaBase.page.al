@@ -142,6 +142,20 @@ page 50206 PaginaBase
                     EnvInfo.EvaluaEntorno();
                 end;
             }
+            action(DeleteRow)
+            {
+                Caption = 'Dekete Row No Skip Trigger';
+                ApplicationArea = All;
+                Image = DeleteQtyToHandle;
+
+                trigger OnAction()
+                begin
+                    CurrPage.SetSelectionFilter(Rec);
+                    if not Rec.IsEmpty then
+                        Rec.DeleteAll(false);
+                    Rec.Reset();
+                end;
+            }
         }
 
     }

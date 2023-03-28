@@ -47,6 +47,19 @@
         //     "breakOnError": true,
         //     "launchBrowser": true,
         //     "schemaUpdateMode": "ForceSync"
-        // }
+        // },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Lider BI",
+            "environmentType": "Sandbox",
+            "environmentName": "DesarrolloBI",
+            "tenant": "d60693a1-c20d-421f-836a-fb176c6601bd",
+            "startupObjectId": 9006,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "schemaUpdateMode": "ForceSync"
+        }
     ]
 }

@@ -33,6 +33,7 @@ page 50207 FichaBase
                 field(DescriptionLong; Rec.DescriptionLong)
                 {
                     ApplicationArea = All;
+                    MultiLine = true;
                 }
                 field(URL; Rec.URL)
                 {

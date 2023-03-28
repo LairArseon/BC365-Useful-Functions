@@ -203,6 +203,11 @@
           <note from="Developer" annotates="general" priority="2">ESP="Oauth"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Oauth - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2495308647 - Action 2192231765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dekete Row No Skip Trigger</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PaginaBase - Action DeleteRow - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2495308647 - Action 419926339 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Displays the Table information pertaining the current company.</source>
           <note from="Developer" annotates="general" priority="2">ESP="Muestra la información de la tabla perteneciente a la compañía actual."</note>
