@@ -18,7 +18,7 @@ codeunit 50208 ManejoQR
         recBarcodeEncodeSettings2D."Code Page" := 28591;
 
 
-        // Hola
+        // Hola mundo
 
         iBarcode := Enum::"Barcode Image Provider 2D"::Dynamics2D;
         tBloblBar := iBarcode.EncodeImage(Contenido, Enum::"Barcode Symbology 2D"::"QR-Code", recBarcodeEncodeSettings2D);
