@@ -11,7 +11,7 @@ table 50203 TablaQR
             DataClassification = ToBeClassified;
             AutoIncrement = true;
         }
-        field(2; Titulo; Text[10])
+        field(2; Titulo; Text[50])
         {
             DataClassification = ToBeClassified;
         }
@@ -19,7 +19,7 @@ table 50203 TablaQR
         {
             DataClassification = ToBeClassified;
         }
-        field(4; Apellidos; Text[100])
+        field(4; Apellido1; Text[100])
         {
             DataClassification = ToBeClassified;
         }
@@ -75,6 +75,15 @@ table 50203 TablaQR
         {
             DataClassification = ToBeClassified;
         }
+        field(17; Apellido2; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(18; TlfnMov; Code[14])
+        {
+            DataClassification = ToBeClassified;
+            ExtendedDatatype = PhoneNo;
+        }
     }
 
     keys
@@ -87,7 +96,7 @@ table 50203 TablaQR
 
     fieldgroups
     {
-        fieldgroup(Brick; Apellidos, Nombre, Tlfn, Org, Profesion, Picture, Direccion)
+        fieldgroup(Brick; Apellido1, Nombre, Tlfn, Org, Profesion, Picture, Direccion)
         {
 
         }
@@ -101,19 +110,21 @@ table 50203 TablaQR
         Contenido += tHelper.CRLFSeparator();
         Contenido += 'VERSION:3.0';
         Contenido += tHelper.CRLFSeparator();
-        Contenido += 'FN;CHARSET=UTF-8:' + Rec.Nombre + ' ' + Rec.Apellidos;
+        Contenido += 'FN;CHARSET=UTF-8:' + Rec.Nombre + ' ' + Rec.Apellido1 + ' ' + Rec.Apellido2;
         Contenido += tHelper.CRLFSeparator();
-        Contenido += 'N;CHARSET=UTF-8:' + Rec.Apellidos + ';' + Rec.Nombre + ';;' + Rec.Titulo + ';';
+        Contenido += 'N:' + Rec.Apellido1 + ';' + Rec.Nombre + ';' + Rec.Titulo + ';';
         Contenido += tHelper.CRLFSeparator();
         Contenido += 'TEL;TYPE=HOME,VOICE:' + Rec.Tlfn;
         Contenido += tHelper.CRLFSeparator();
         Contenido += 'TEL;TYPE=WORK,VOICE:' + Rec.TlfnTra;
         Contenido += tHelper.CRLFSeparator();
-        Contenido += 'EMAIL:' + Rec.Email;
+        Contenido += 'TEL;TYPE=CELL,VOICE,PREF:' + Rec.TlfnTra;
         Contenido += tHelper.CRLFSeparator();
-        Contenido += 'ORG;CHARSET=UTF-8:' + Rec.Org;
+        Contenido += 'EMAIL;TYPE=INTERNET:' + Rec.Email;
         Contenido += tHelper.CRLFSeparator();
-        Contenido += 'TITLE;CHARSET=UTF-8:' + Rec.Profesion;
+        Contenido += 'ORG:' + Rec.Org;
+        Contenido += tHelper.CRLFSeparator();
+        Contenido += 'TITLE:' + Rec.Profesion;
         Contenido += tHelper.CRLFSeparator();
         Contenido += 'BDAY:' + Format(Rec.FechaNaci);
         Contenido += tHelper.CRLFSeparator();
@@ -122,6 +133,7 @@ table 50203 TablaQR
         Contenido += 'URL:' + Rec.Web;
         Contenido += tHelper.CRLFSeparator();
         Contenido += 'END:VCARD';
+        Contenido += tHelper.CRLFSeparator();
     end;
 
 

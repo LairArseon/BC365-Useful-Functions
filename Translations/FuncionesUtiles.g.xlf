@@ -68,10 +68,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TablaDoblePK - Field Maincode - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3952632955 - Field 2544883167 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Apellidos</source>
+        <trans-unit id="Table 3952632955 - Field 1662398577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apellido1</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Apellidos - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Apellido1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 1024701960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apellido2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Apellido2 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3952632955 - Field 4102913500 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AutoKey</source>
@@ -137,6 +142,11 @@
           <source>Tlfn</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field Tlfn - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3952632955 - Field 3091857744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TlfnMov</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaQR - Field TlfnMov - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3952632955 - Field 1138049617 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TlfnTra</source>

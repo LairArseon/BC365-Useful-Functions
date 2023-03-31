@@ -19,11 +19,19 @@ page 50222 FichaContacto
                 {
                     ApplicationArea = All;
                 }
-                field(Apellidos; Rec.Apellidos)
+                field(PrimerApellido; Rec.Apellido1)
+                {
+                    ApplicationArea = All;
+                }
+                field(SegundoApellido; Rec.Apellido2)
                 {
                     ApplicationArea = All;
                 }
                 field(Tlfn; Rec.Tlfn)
+                {
+                    ApplicationArea = All;
+                }
+                field(Movil; Rec.TlfnMov)
                 {
                     ApplicationArea = All;
                 }
