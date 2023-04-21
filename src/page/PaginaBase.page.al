@@ -37,7 +37,8 @@ page 50206 PaginaBase
                 field(DescriptionLong; Rec.DescriptionLong)
                 {
                     ApplicationArea = All;
-                    MultiLine = true;
+                    // Multiline funciona en lista sorprendentemente
+                    // MultiLine = true;
                 }
                 field(URL; Rec.URL)
                 {

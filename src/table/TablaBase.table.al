@@ -33,6 +33,10 @@ table 50200 TablaBase2
         field(8; QR; Media)
         {
         }
+        field(9; PassWord; Text[200])
+        {
+            ExtendedDatatype = Masked;
+        }
     }
 
     keys

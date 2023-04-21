@@ -43,6 +43,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TablaBase2 - Field Number - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1192163031 - Field 1978199777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PassWord</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablaBase2 - Field PassWord - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1192163031 - Field 3751398229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>QR</source>
           <note from="Developer" annotates="general" priority="2"></note>

@@ -39,6 +39,10 @@ page 50207 FichaBase
                 {
                     ApplicationArea = All;
                 }
+                field(PW; Rec.PassWord)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
         area(FactBoxes)

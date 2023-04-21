@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "server": "http://BCTC21",
+            "server": "http://BCTC22",
             "serverInstance": "BC",
             "authentication": "UserPassword",
             "startupObjectId": 9006,
