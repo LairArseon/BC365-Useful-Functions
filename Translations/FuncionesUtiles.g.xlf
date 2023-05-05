@@ -13,6 +13,41 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ConfTable - Field Up - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1418398776 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error Log</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Log de Errores"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ErrorLog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1418398776 - Field 3241109867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ErrorDateTime</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ErrorLog - Field ErrorDateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1418398776 - Field 2967736223 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ErrorSource</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ErrorLog - Field ErrorSource - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1418398776 - Field 2810311271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ErrorText</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ErrorLog - Field ErrorText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1418398776 - Field 851789559 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IdError</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ErrorLog - Field IdError - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1418398776 - Field 720295338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>InfoError</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ErrorLog - Field InfoError - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1418398776 - Field 1814464443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ErrorLog - Field User - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1192163031 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -212,6 +247,11 @@
           <source>Cargar</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ImageFact - NamedType lbl_Load</note>
+        </trans-unit>
+        <trans-unit id="Page 3074325823 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error List</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Lista Errores"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ListaErrores - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1711612873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Oauth</source>
