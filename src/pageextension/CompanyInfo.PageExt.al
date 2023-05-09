@@ -48,6 +48,22 @@ pageextension 50200 CosmosMethods extends "Company Information"
                     Message(Format(FRef.Value()));
                 end;
             }
+
+            // Comprueba desde que tipo de dispositivo se está trabajando
+            action(CheckDevice)
+            {
+                ApplicationArea = All;
+                Caption = 'Check Device', Comment = 'ESP="Comprueba Dispositivo"';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedOnly = True;
+                Image = ShortcutToDesktop;
+
+                trigger OnAction()
+                begin
+                    Message(Format(Session.CurrentClientType));
+                end;
+            }
         }
 
     }

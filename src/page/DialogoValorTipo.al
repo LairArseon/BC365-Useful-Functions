@@ -67,6 +67,7 @@ page 50220 "Solicitar Valor_SGA_LDR"
     local procedure EvalField(GBL_Value: Text; GBL_FieldType: FieldType): Boolean
     var
         lbl_WrongFieldType: Label 'Please provide a correct Field Type', Comment = 'ESP="Por favor introduzca un Tipo de Campo correcto"';
+        fText: Text;
         fBigInt: BigInteger;
         fBool: Boolean;
         fDate: Date;
@@ -118,6 +119,10 @@ page 50220 "Solicitar Valor_SGA_LDR"
             FieldType::Time:
                 begin
                     exit(Evaluate(fTime, GBL_Value));
+                end;
+            FieldType::Text:
+                begin
+                    exit(Evaluate(fText, GBL_Value));
                 end;
             else
                 Error(lbl_WrongFieldType);
