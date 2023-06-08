@@ -64,6 +64,17 @@ page 50211 ListaDoblePK
 
                 end;
             }
+            action(ShowRecordID)
+            {
+                Caption = 'Print the RecordID of the record';
+                ApplicationArea = All;
+                Image = PriceAdjustment;
+
+                trigger OnAction()
+                begin
+                    Message(Format(Rec.RecordId));
+                end;
+            }
         }
     }
 }

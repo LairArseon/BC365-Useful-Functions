@@ -52,8 +52,7 @@ page 50226 Survey
                     URL: Text;
                 begin
                     dialogValue.SetFieldType(FieldType::Text);
-                    dialogValue.Caption('URL'); // Valor del caption de la página
-                    dialogValue.SetFieldCaption('URL'); // Valor del caption del campo
+                    dialogValue.SetCaptions('URL', 'URL'); // Valor del caption del campo
                     if dialogValue.RunModal() = Action::OK then
                         dialogValue.GetValue(URL);
                     CurrPage.TaskPage.SendRequest(URL, 10000);

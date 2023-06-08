@@ -6,7 +6,7 @@ page 50208 ImageFact
     PageType = CardPart;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = TablaBase2;
+    SourceTable = TablaBase;
 
     layout
     {

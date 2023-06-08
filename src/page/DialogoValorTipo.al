@@ -18,7 +18,8 @@ page 50220 "Solicitar Valor_SGA_LDR"
     PageType = StandardDialog;
     ApplicationArea = All;
     UsageCategory = Lists;
-    Caption = 'Get Value', Comment = 'ESP="Obtener Valor"';
+    Caption = 'Input', comment = 'ESP="Datos"';
+    DataCaptionExpression = GBL_PageCaption;
 
     layout
     {
@@ -27,10 +28,24 @@ page 50220 "Solicitar Valor_SGA_LDR"
             group(GroupName)
             {
                 ShowCaption = false;
-                field(FieldName; GBL_Value)
+                field(SingleLineField; GBL_Value)
                 {
                     ApplicationArea = All;
                     CaptionClass = GBL_FieldCaption;
+                    Visible = not GBL_MultiLine;
+
+                    trigger OnValidate()
+                    begin
+                        if not EvalField(GBL_Value, GBL_FieldType) then
+                            Error(lbl_fieldType, Format(GBL_FieldType));
+                    end;
+                }
+                field(MultiLineField; GBL_Value)
+                {
+                    ApplicationArea = All;
+                    CaptionClass = GBL_FieldCaption;
+                    MultiLine = true;
+                    Visible = GBL_MultiLine;
 
                     trigger OnValidate()
                     begin
@@ -47,16 +62,24 @@ page 50220 "Solicitar Valor_SGA_LDR"
         GBL_FieldType := parFieldType;
     end;
 
-    procedure SetFieldCaption(FieldCaption: Text)
+    procedure SetCaptions(PageCaption: Text; FieldCaption: Text)
     begin
+        GBL_PageCaption := PageCaption;
         GBL_FieldCaption := FieldCaption;
+    end;
+
+    procedure SetValue(parValue: Text)
+    begin
+        GBL_Value := parValue;
+    end;
+
+    procedure Multiline()
+    begin
+        GBL_MultiLine := true;
     end;
 
     [TryFunction]
     procedure GetValue(var Valor: Text)
-    var
-        ffieldref: FieldRef;
-        variantValue: Variant;
     begin
         if EvalField(GBL_Value, GBL_FieldType) then begin
             Valor := GBL_Value;
@@ -64,10 +87,9 @@ page 50220 "Solicitar Valor_SGA_LDR"
             Error(lbl_fieldType, Format(GBL_FieldType));
     end;
 
-    local procedure EvalField(GBL_Value: Text; GBL_FieldType: FieldType): Boolean
+    local procedure EvalField(parValue: Text; parFieldType: FieldType): Boolean
     var
         lbl_WrongFieldType: Label 'Please provide a correct Field Type', Comment = 'ESP="Por favor introduzca un Tipo de Campo correcto"';
-        fText: Text;
         fBigInt: BigInteger;
         fBool: Boolean;
         fDate: Date;
@@ -78,51 +100,52 @@ page 50220 "Solicitar Valor_SGA_LDR"
         fGuid: Guid;
         fInteger: Integer;
         fTime: Time;
+        fText: Text;
     begin
-        case GBL_FieldType of
+        case parFieldType of
             FieldType::BigInteger:
                 begin
-                    exit(Evaluate(fBigInt, GBL_Value));
+                    exit(Evaluate(fBigInt, parValue));
                 end;
             FieldType::Boolean:
                 begin
-                    exit(Evaluate(fBool, GBL_Value));
+                    exit(Evaluate(fBool, parValue));
                 end;
             FieldType::Date:
                 begin
-                    exit(Evaluate(fDate, GBL_Value));
+                    exit(Evaluate(fDate, parValue));
                 end;
             FieldType::DateFormula:
                 begin
-                    exit(Evaluate(fDateFormula, GBL_Value));
+                    exit(Evaluate(fDateFormula, parValue));
                 end;
             FieldType::DateTime:
                 begin
-                    exit(Evaluate(fDateTime, GBL_Value));
+                    exit(Evaluate(fDateTime, parValue));
                 end;
             FieldType::Decimal:
                 begin
-                    exit(Evaluate(fDecimal, GBL_Value));
+                    exit(Evaluate(fDecimal, parValue));
                 end;
             FieldType::Duration:
                 begin
-                    exit(Evaluate(fDuration, GBL_Value));
+                    exit(Evaluate(fDuration, parValue));
                 end;
             FieldType::Guid:
                 begin
-                    exit(Evaluate(fGuid, GBL_Value));
+                    exit(Evaluate(fGuid, parValue));
                 end;
             FieldType::Integer:
                 begin
-                    exit(Evaluate(fInteger, GBL_Value));
+                    exit(Evaluate(fInteger, parValue));
                 end;
             FieldType::Time:
                 begin
-                    exit(Evaluate(fTime, GBL_Value));
+                    exit(Evaluate(fTime, parValue));
                 end;
             FieldType::Text:
                 begin
-                    exit(Evaluate(fText, GBL_Value));
+                    exit(Evaluate(fText, parValue));
                 end;
             else
                 Error(lbl_WrongFieldType);
@@ -131,7 +154,11 @@ page 50220 "Solicitar Valor_SGA_LDR"
 
     var
         lbl_fieldType: Label 'The Input Value must be of type %1', Comment = 'ESP="El valor introducido debe ser de tipo %1"';
-        GBL_FieldType: FieldType;
+        GBL_MultiLine: Boolean;
         GBL_FieldCaption: Text;
         GBL_Value: Text;
+        GBL_PageCaption: Text;
+
+        // HACK Usar una lista de tipos para poder permitir inputs de varios tipos en la misma ventana
+        GBL_FieldType: FieldType;
 }

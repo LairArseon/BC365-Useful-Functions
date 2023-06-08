@@ -5,7 +5,7 @@ page 50207 FichaBase
 {
     PageType = Card;
     UsageCategory = None;
-    SourceTable = TablaBase2;
+    SourceTable = TablaBase;
 
     layout
     {

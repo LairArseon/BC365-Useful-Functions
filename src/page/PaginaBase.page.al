@@ -6,7 +6,7 @@ page 50206 PaginaBase
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = TablaBase2;
+    SourceTable = TablaBase;
     Editable = true;
     CardPageId = FichaBase;
 
@@ -23,6 +23,19 @@ page 50206 PaginaBase
                 field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
+
+
+                    trigger OnLookup(var Text: text): Boolean
+                    var
+                        custList: Page "Customer List";
+                        recCust: Record Customer;
+                    begin
+                        custList.LookupMode := true;
+                        if custList.RunModal() = action::LookupOK then begin
+                            custList.GetRecord(recCust);
+                            Message(recCust.Name);
+                        end;
+                    end;
                 }
                 field(Inventory; Rec.Inventory)
                 {
@@ -68,7 +81,7 @@ page 50206 PaginaBase
 
                 trigger OnAction()
                 var
-                    tBase: Record TablaBase2;
+                    tBase: Record TablaBase;
                     tBlob: Codeunit "Temp Blob";
                     inst: InStream;
                     filename: Text;
@@ -145,7 +158,7 @@ page 50206 PaginaBase
             }
             action(DeleteRow)
             {
-                Caption = 'Dekete Row No Skip Trigger';
+                Caption = 'Delete Row No Skip Trigger';
                 ApplicationArea = All;
                 Image = DeleteQtyToHandle;
 
@@ -157,6 +170,17 @@ page 50206 PaginaBase
                     Rec.Reset();
                 end;
             }
+            action(ShowRecordID)
+            {
+                Caption = 'Print the RecordID of the record';
+                ApplicationArea = All;
+                Image = PriceAdjustment;
+
+                trigger OnAction()
+                begin
+                    Message(Format(Rec.RecordId));
+                end;
+            }
         }
 
     }
@@ -165,6 +189,11 @@ page 50206 PaginaBase
         GBL_FieldStyle: Text;
 
     trigger OnOpenPage()
+    begin
+    end;
+
+    // Calcular los estilos de cada registro se hace en el afterGetRecord
+    trigger OnAfterGetRecord()
     begin
         GBL_FieldStyle := EvaluateInventoryStyle(Rec.Inventory);
     end;
@@ -196,8 +225,8 @@ page 50206 PaginaBase
     /// </summary>
     local procedure ProcRunModalBucle()
     var
-        recTabBase: Record TablaBase2;
-        recTabBaseTemp: Record TablaBase2 temporary;
+        recTabBase: Record TablaBase;
+        recTabBaseTemp: Record TablaBase temporary;
         confDialog: Dialog;
         fichaB: Page FichaBase;
         dialogBase: Page DialogBase;

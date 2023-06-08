@@ -1,8 +1,12 @@
 /// <summary>
 /// Table TablaBase (ID 50200).
 /// </summary>
-table 50200 TablaBase2
+table 50200 TablaBase
 {
+
+    // Si queremos invocar un drilldown que llame a esta tabla es importante indicar la propiedad DrollDownPageID que es la que informa de que página
+    // que debe abrirse en caso de llamarse al trigger
+    DrillDownPageId = PaginaBase;
 
     fields
     {
