@@ -1,0 +1,24 @@
+# Funcionalodades Exploradas
+
+- Iteractuar con la Checklist presente en el RoleCenter
+- Uso de Codeunits Single instance, cuyos valores se mantienen durante la sesión
+- Realizar peticiones web con cabeceras y cuerpo personalizados
+- Obtener información del entorno de ejecución
+- Abrir página asignada por defecto a la tabla sin conocer su número, teniendo solo el REC
+- Crear códigos QR y modíficar los parámteros que los componen
+- Emitir e interactuar con Notificaciones
+- Registrar errores durante unsa sesión hija abierta durante la ejecución para evitar RollBack
+- Evento para forzar la sustitución de un report
+- ControlAddIns y ejemplos básicos
+- Subir imágenes a campos media
+- Uso de los ControlAddIn del Estándar de BC (OAuth, Spinner, Survey)
+- Uso de cues en contexto de RoleCenter, Página y FactBox
+- Visualización de sesiones activas
+- Página de diálogo de obtención de un texto y de obtención de distintos tipos de variable
+- Uso de FactBox
+- Uso del método Find('=') para buscar registros dentro de un conjunto sin modificar los filtros del mismo
+- Dar estilos a campos
+- Obtener la Imágen en Base64 de un producto
+- Contenidos de las tablas Media y MediaSet y sus diferencias
+- Ejemplo FieldGroup
+- Generar VCards de contactos
