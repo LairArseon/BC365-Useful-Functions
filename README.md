@@ -1,4 +1,4 @@
-# Funcionalodades Exploradas
+# Funcionalidades Exploradas
 
 - Iteractuar con la Checklist presente en el RoleCenter
 - Uso de Codeunits Single instance, cuyos valores se mantienen durante la sesión
