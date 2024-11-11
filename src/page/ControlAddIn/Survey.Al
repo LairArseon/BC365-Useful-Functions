@@ -48,7 +48,7 @@ page 50226 Survey
 
                 trigger OnAction()
                 var
-                    dialogValue: Page "Solicitar Valor_SGA_LDR";
+                    dialogValue: Page "Solicitar Valor";
                     URL: Text;
                 begin
                     dialogValue.SetFieldType(FieldType::Text);

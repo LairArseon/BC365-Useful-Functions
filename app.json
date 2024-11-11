@@ -1,8 +1,8 @@
 {
   "id": "805d1b4c-652f-4ee6-9628-d6751cfa3270",
   "name": "FuncionesUtiles",
-  "publisher": "Default publisher",
-  "version": "1.0.0.0",
+  "publisher": "Tebbie INC.",
+  "version": "1.0.0.6",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -10,7 +10,20 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "10cb69d9-bc8a-4d27-970a-9e110e9db2a5",
+      "name": "_Exclude_APIV2_",
+      "publisher": "Microsoft",
+      "version": "1.0.0.0"
+    },
+    {
+      "id": "ac14293f-1eb7-4a7b-9936-b280da31970b",
+      "name": "Data Search",
+      "publisher": "Microsoft",
+      "version": "1.0.0.0"
+    }
+  ],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "21.0.0.0",
@@ -25,7 +38,7 @@
     "allowDownloadingSource": false,
     "includeSourceInSymbolFile": false
   },
-  "runtime": "10.0",
+  "runtime": "12.1",
   "features": [
     "NoImplicitWith",
     "TranslationFile"

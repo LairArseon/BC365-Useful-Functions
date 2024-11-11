@@ -79,7 +79,7 @@ page 50227 PaginaCues
                 trigger OnAction()
                 var
                     math: Codeunit Math;
-                    pagValue: Page "Solicitar Valor_SGA_LDR";
+                    pagValue: Page "Solicitar Valor";
                     valor: Text;
                     dividendo: Decimal;
                     divisor: Decimal;

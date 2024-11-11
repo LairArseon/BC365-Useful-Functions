@@ -10,4 +10,18 @@ pageextension 50201 "Order Processor Extension" extends "Order Processor Role Ce
             }
         }
     }
+
+    actions
+    {
+        addlast(processing)
+        {
+            action(TextEditor)
+            {
+                ApplicationArea = All;
+                Caption = 'Text Editor', comment = 'ESP="Editor de Texto"';
+                Image = Edit;
+                RunObject = Page TextEditor;
+            }
+        }
+    }
 }

@@ -2,11 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Contenedor Cloud",
+            "name": "Contenedor OnPrem 21",
             "request": "launch",
             "type": "al",
-            "environmentType": "Sandbox",
-            "server": "http://BCTC22",
+            "environmentType": "OnPrem",
+            "server": "http://BCTC-21-OnPrem",
             "serverInstance": "BC",
             "authentication": "UserPassword",
             "startupObjectId": 9006,
@@ -18,36 +18,6 @@
             "tenant": "default",
             "schemaUpdateMode": "ForceSync"
         },
-        {
-            "name": "Contenedor OnPrem",
-            "request": "launch",
-            "type": "al",
-            "environmentType": "OnPrem",
-            "server": "http://BCTC21Prem",
-            "serverInstance": "BC",
-            "authentication": "UserPassword",
-            "startupObjectId": 50206,
-            "startupObjectType": "Page",
-            "breakOnError": true,
-            "launchBrowser": true,
-            "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true,
-            "tenant": "default",
-            "schemaUpdateMode": "ForceSync"
-        },
-        // {
-        //     "type": "al",
-        //     "request": "launch",
-        //     "name": "Lider Sandbox",
-        //     "environmentType": "Sandbox",
-        //     "environmentName": "Sandbox",
-        //     "tenant": "d60693a1-c20d-421f-836a-fb176c6601bd",
-        //     "startupObjectId": 9006,
-        //     "startupObjectType": "Page",
-        //     "breakOnError": true,
-        //     "launchBrowser": true,
-        //     "schemaUpdateMode": "ForceSync"
-        // },
         {
             "type": "al",
             "request": "launch",
@@ -60,6 +30,29 @@
             "breakOnError": true,
             "launchBrowser": true,
             "schemaUpdateMode": "ForceSync"
-        }
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Entorno CDX",
+            "environmentType": "Sandbox",
+            "environmentName": "Sandbox",
+            "tenant": "e09601c8-51f9-4491-88e3-1283efe2043a",
+            "startupObjectId": 9006,
+            "startupObjectType": "Page",
+            "breakOnError": "ExcludeTry",
+            "launchBrowser": true,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "type": "al",
+            "request": "attach",
+            "name": "Attach Entorno CDX",
+            "environmentType": "Sandbox",
+            "environmentName": "Sandbox",
+            "tenant": "e09601c8-51f9-4491-88e3-1283efe2043a",
+            "breakOnError": "ExcludeTry",
+            "breakOnNext": "WebServiceClient"
+        },
     ]
 }

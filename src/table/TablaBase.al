@@ -41,6 +41,20 @@ table 50200 TablaBase
         {
             ExtendedDatatype = Masked;
         }
+        field(10; DescriptionLong2; Text[2048])
+        {
+
+        }
+        field(11; TestFlowField; Boolean)
+        {
+            FieldClass = FlowField;
+            CalcFormula = lookup(ConfTable.Up);
+        }
+        field(12; CustomerCount; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count(Customer);
+        }
     }
 
     keys
@@ -50,6 +64,8 @@ table 50200 TablaBase
         }
     }
 
+
+    // https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-field-groups
     fieldgroups
     {
         fieldgroup(Brick; Number, Description, Inventory, Image, DescriptionLong)

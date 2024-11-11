@@ -24,4 +24,27 @@ codeunit 50203 MyCodeunit
 
     var
         myInt: Integer;
+
+
+    procedure actualizarFoto(recItem: Record Item)
+    var
+        path: text;
+        instrs: InStream;
+    begin
+        if CargarImagen(recItem, path) then begin
+            // recItem.Picture.ImportFile(path + recItem."No.");
+        end;
+
+    end;
+
+    [TryFunction]
+    procedure CargarImagen(recItem: Record Item; path: text)
+    var
+        fileMng: Codeunit "File Management";
+        temprecItem: Record Item temporary;
+    begin
+        temprecItem := recItem;
+
+        // temprecItem.Picture.ImportFile(path + recItem."No.");
+    end;
 }

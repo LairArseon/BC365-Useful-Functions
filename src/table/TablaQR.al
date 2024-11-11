@@ -15,7 +15,7 @@ table 50203 TablaQR
         {
             DataClassification = ToBeClassified;
         }
-        field(3; Nombre; Text[50])
+        field(3; Nombre; Text[100])
         {
             DataClassification = ToBeClassified;
         }
@@ -83,6 +83,10 @@ table 50203 TablaQR
         {
             DataClassification = ToBeClassified;
             ExtendedDatatype = PhoneNo;
+        }
+        field(19; Clave; Code[20])
+        {
+            DataClassification = ToBeClassified;
         }
     }
 
